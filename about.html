@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Ryann Green  |  Design + Develop</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="keywords" content="Graphic Design, Design, Publication, Web Design, HTML, CSS, JavaScript, Wordpress, Baton Rouge, Louisiana, Freelance, Freelancer, Small Business, Local">
+    <meta name="description" content="I am a graphic designer and web developer in the Baton Rouge/New Orleans area. I specialize in publication design and web sites for small businesses.">
+    <meta name="author" content="Ryann Green">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  </head>
+  
+  <body>
+    
+    <div class="sidebar slide-menu">
+      <a href="index.html"><img class="logo" src="img/personallogo.png" alt="Ryann Green Logo" height="100px"></a>
+      <nav>
+        <ul>
+          <li class="close-menu"><img src="img/close.png" alt="Close Menu"></li>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <!-- <li><a href="blog.html">Blog</a></li>-->
+        </ul>
+      </nav>
+    </div>
+    <div id="menubar">
+      <img class="toggle-slide" src="img/menu.png" alt="Menu">
+    </div>
+    
+    <div class="module about">
+      <p>My name is Ryann Green. I'm a senior at Southeastern Louisiana University, a Graphic Design major along with a Publishing Studies minor, part-time writer, bookbinder, and knitter, who likes to listen to music and learn new skills. I'm a passionate person and I love learning. You probably know me as "that nerd in school." Back in the day, that may have been an insult. Now, I think we would both agree it's an asset. The world changes fast, especially when you're talking about design trends and web technologies. It's hard to keep up with it all and stay sane. Fortunately for you, you don't have to. That's what I'm here for. <br><br>
+      While I may not be the next Michelangelo, I have some other skills that will be even more useful than a 133 foot long mural. I am well organized, have exceptional time management skills, and I depend on communication going both ways. No matter how big or small the project, the first thing on my mind is how this will benefit you and your audience, and to do that, I need to understand you. <br><br>
+      My aesthetics fall into the minimal category. I'm a firm believer that more doesn't mean better, and that if something works without an element, it shouldn't be there. I also like subtle color palettes versus more saturated ones, as well as vector work over a more "handdrawn" look. I love incorporating pattern into a design if it needs a little extra punch. Take a look at my work and you'll get a feel of what I mean. <br><br>
+        Take a look at my <a href="img/rgresume.pdf"><strong>resume</strong></a> if you aren't quite convinced we'll work well together, and then head on over to my contact page. Also, you can download my <a href="img/portfolio.pdf"><strong>portfolio</strong></a> to look at as well. </p>
+    </div>
+    
+    <script>
+      // Click on .toggle slide
+        $(".toggle-slide").click(function() {
+          // Change .sidebar left css to 0px
+          $(".sidebar").css("left", "0px");
+        });
+      // Click on .close-menu
+        $(".close-menu").click(function() {
+          // Change .sidebar left css to -300px
+          $(".sidebar").css("left", "-300px");
+        });
+    </script>
+    
+  </body>
+  
+</html>

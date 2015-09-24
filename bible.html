@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Ryann Green  |  Design + Develop</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta name="keywords" content="Graphic Design, Design, Publication, Web Design, HTML, CSS, JavaScript, Wordpress, Baton Rouge, Louisiana, Freelance, Freelancer, Small Business, Local">
+    <meta name="description" content="I am a graphic designer and web developer in the Baton Rouge/New Orleans area. I specialize in publication design and web sites for small businesses.">
+    <meta name="author" content="Ryann Green">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-59235137-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+  
+  <body>
+    
+    <div class="sidebar slide-menu">
+      <a href="index.html"><img class="logo" src="img/personallogo.png" alt="Ryann Green Logo" height="100px"></a>
+      <nav>
+        <ul>
+          <li class="close-menu"><img src="img/close.png" alt="Close Menu"></li>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <!-- <li><a href="blog.html">Blog</a></li>-->
+        </ul>
+      </nav>
+    </div>
+    <div id="menubar">
+      <img class="toggle-slide" src="img/menu.png" alt="Menu">
+    </div>
+    
+    <div class="module main">
+      <img class="intro" src="img/biblecover.jpg" alt="Volume 8: Gospels">
+      <div class="title">
+        <ul>
+          <li><img src="img/bracket.png" alt="Bracket" height="90%"></li>
+          <li class="company">Volume 08:<br> Gospels</li>
+        </ul>
+      </div>
+      <div class="scroll">
+        <p>Scroll Down</p>
+        <img src="img/scroll.png" alt="Arrow">
+      </div>
+    </div>
+    
+    <div class="module project">
+      <div class="project-info">
+        <ul>
+          <li class="proj-logo">Bible<br> Redesign</li>
+          <li><img src="img/brackleft.png"></li>
+            <ul class="skills">
+              <li>Print Design</li>
+              <li>Typesetting</li>
+              <li>Pattern Design</li>
+            </ul>
+          <li><img src="img/brackright.png"></li>
+        </ul>
+      </div>
+      <p>This is the beginning of a personal project that I started in Fall 2014. I find that there is a large lack of a variety of reading experiences when it comes to the Bible. For one of the oldest, and most widely bought books, they are all surprisingly similar when it comes to format and size. So I set out on the large project of typesetting the Bible in a different way, one that was more similar to a literary reading experience we are used to when reading our favorite books. The end result will be the 66 books of the Bible divided into 10 gospels; 7 for the Old Testament and 3 for the New Testament. At the end of each book, there is a pattern made up of 66 parts, with one part added for each book. The type also changes each book, forming a very subtle gradient, becoming more white as it nears the end of the Bible. </p>
+    </div>
+    
+    <div class="module slideshow">
+      <img id="1" class="active" src="img/biblecover.jpg" alt="Cover of Bible"/>
+      <img id="2" src="img/biblechapter.jpg" alt="Chapter Beginning"/>
+      <img id="3" src="img/biblenumbers.jpg" alt="Page Numbers"/>
+      <img id="4" src="img/bibleopen.jpg" alt="Open Bible"/> 
+      <img id="5" src="img/biblered.jpg" alt="Book Preface"/> 
+      <img id="6" src="img/bibleback.jpg" alt="Back Cover of Bible"/>
+      <ul class="slideshow-select">
+        <li><div class="active button but1"></div></li>
+        <li><div class="button but2"></div></li>
+        <li><div class="button but3"></div></li>
+        <li><div class="button but4"></div></li>
+        <li><div class="button but5"></div></li>
+        <li><div class="button but6"></div></li>
+      </ul>
+    </div>
+    
+    <div class="module wrap_up">
+      <div class="image extras">
+        <img src="img/biblepattern.gif" alt="Bible Pattern" style="max-height:200px; max-width: 200px;">
+      </div>
+      
+      <div class="typeface extras">
+        <ul>
+          <li>Perpetua<br>
+            <img src="img/perp.png"></li>
+          <li>Perpetua Italic<br>
+            <img src="img/perpital.png"></li>
+        </ul>
+      </div>
+      
+      <div class="s1-2 color" style="background: #2E2925;">
+      <p>CMYK: 66, 64, 67, 67<br>
+        RGB: 46, 41, 37<br>
+        Hex: #2E2925<br>
+        Pantone: Black C</p>
+      </div>
+      <div class="s2-2 color" style="background: #D3441C;">
+      <p>CMYK: 0, 100, 83, 0<br>
+        RGB: 237. 26, 55<br>
+        Hex: #FF4611<br>
+        Pantone: 172 C</p>
+      </div>
+    </div>
+    
+    
+    <script>
+      // on click of button with class
+      $(".but1").click(function() {
+        // remove .active for unclicked
+        $(".button").removeClass("active");
+        $(".slideshow img").removeClass("active");
+        // change css for button clicked
+        $(".but1").addClass("active");
+        // change z-index of image with class
+        $("#1").addClass("active");
+      });
+      $(".but2").click(function() {
+        $(".button").removeClass("active");
+        $(".slideshow img").removeClass("active");
+        $(".but2").addClass("active");
+        $("#2").addClass("active");
+      });
+      $(".but3").click(function() {
+        $(".button").removeClass("active");
+        $(".slideshow img").removeClass("active");
+        $(".but3").addClass("active");
+        $("#3").addClass("active");
+      });
+      $(".but4").click(function() {
+        $(".button").removeClass("active");
+        $(".slideshow img").removeClass("active");
+        $(".but4").addClass("active");
+        $("#4").addClass("active");
+      });
+      $(".but5").click(function() {
+        $(".button").removeClass("active");
+        $(".slideshow img").removeClass("active");
+        $(".but5").addClass("active");
+        $("#5").addClass("active");
+      });
+      $(".but6").click(function() {
+        $(".button").removeClass("active");
+        $(".slideshow img").removeClass("active");
+        $(".but6").addClass("active");
+        $("#6").addClass("active");
+      });
+      
+      // Click on .toggle slide
+        $(".toggle-slide").click(function() {
+          // Change .sidebar left css to 0px
+          $(".sidebar").css("left", "0px");
+        });
+      // Click on .close-menu
+        $(".close-menu").click(function() {
+          // Change .sidebar left css to -300px
+          $(".sidebar").css("left", "-300px");
+        });
+    </script>
+    
+  </body>
+  
+</html>
