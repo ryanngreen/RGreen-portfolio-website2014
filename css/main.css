@@ -415,6 +415,12 @@ figure, .project-info ul {
   color: #52524b;
 }
 
+.project-desc a {
+  color: #3e7c9c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .skills {
   display: inline-block;
   padding-left: 0;
@@ -535,6 +541,10 @@ figure, .project-info ul {
   line-height: 2em;
   margin-top: 25px;
   word-spacing: -.08em;
+}
+
+.color-light p {
+  color: #444;
 }
 
 .m1-3, .s1-4, .s1-2 {
